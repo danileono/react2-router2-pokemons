@@ -46,3 +46,29 @@ nav{
   border: none;
 
 }
+
+.pokemon-view{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+
+.select{
+  margin-bottom: 2%;
+  height: 2rem;
+  padding: 0.5rem;
+  height: 3rem;
+}
+
+.nombre{
+  text-transform: capitalize;
+}
+
+.link-volver{
+  color: black;
+  font-weight: 400;
+
+}

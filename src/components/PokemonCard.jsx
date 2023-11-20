@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 function PokemonCard() {
@@ -33,11 +34,10 @@ function PokemonCard() {
       <Card>
         <Card.Img  variant="top" src={pokemon.sprites.front_default} />
         <Card.Body >
-          <h1 >{pokemon.name}</h1>
-          <h2>Tipo:</h2>
-          
+          <h1 className="nombre">{pokemon.name}</h1>
         </Card.Body>
       </Card>
+      <Link to="/pokemones" className="link-volver">Volver</Link>
     </div>
   );
 

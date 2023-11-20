@@ -38,12 +38,12 @@ const handleSelect = (e)=> {
     };
 
     return ( 
-        <>
+        <div className='pokemon-view'>
         <h3>Selecciona tu Pokemon</h3>
 
 
-        <Form.Select  onChange={handleSelect} value={id}  aria-label="Default select example">
-            <option>Open this select menu</option>
+        <Form.Select className='select'  onChange={handleSelect} value={id} >
+            <option>Selecciona un pokemon</option>
             {pokemonData &&
             pokemonData.map((pokemon) => (
             <option key={pokemon.name} value={pokemon.name}>
@@ -53,7 +53,7 @@ const handleSelect = (e)=> {
         </Form.Select>
         <button onClick={()=> verPokemon()}>Buscar</button>
 
-        </>
+        </div>
     );
 }
 
